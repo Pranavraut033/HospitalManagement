@@ -5,7 +5,7 @@ import utilities.Utils;
 
 public class Patient {
 
-    public static final String[] sexAvailable = new String[] {
+    public final String[] sexAvailable = new String[] {
         "Male", "Female", "Unkonwn"
     };
 
@@ -24,18 +24,25 @@ public class Patient {
     private int roomNumber;
     private Doctor doctorAppointed;
 
-    Patient(String name, int sexIndex, int age, long contactNumber, int doctorAppointed, int roomNumber) {
+    public Patient(String name, int sexIndex, int age, long contactNumber, int doctorAppointed, int roomNumber) {
         this.name = name;
         sex = sexAvailable[sexIndex < 3 && sexIndex > 0 ? sexIndex : 2];
         this.age = age;
         this.contactNumber = contactNumber;
-
         // generate a random number between 1 and 1,00,000.
         this.code = utils.randInt(1, 100000);
         // generate a random number between 1 and 1,000.
         this.appointmentCode = utils.randInt(1, 1000);
         this.doctorAppointed = d.getDoctor(doctorAppointed);
         this.roomNumber = roomNumber;
+    }
+
+    public void displayInfo() {
+        System.out.println(this);
+    }
+
+    public String toString() {
+        return "Patient Name: " + name + "\nAge: " + age + "\nSex: " + sex + "\nPatient's Code: " + code + "\nRoom number assinged: " + roomNumber + "";
     }
 
     public void updateName(String name) {
