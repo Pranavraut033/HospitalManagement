@@ -19,14 +19,14 @@ public class Doctor {
 
     public Doctor(String name, int sexIndex, int age, String qualification) {
         this.name = name;
-        sex = sexAvailable[sexIndex < 3 && sexIndex > 0 ? sexIndex : 2];
+        sex = sexAvailable[sexIndex];
         this.age = age;
         this.qualification = qualification;
         doctorCode = utils.randInt(1000, 9999);
         contactNumber = utils.randLong(7000000000L, 9999999999L);
     }
 
-    public void displayInfo() {
+    public void display() {
         System.out.print(this);
     }
 

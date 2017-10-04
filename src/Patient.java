@@ -26,7 +26,7 @@ public class Patient {
 
     public Patient(String name, int sexIndex, int age, long contactNumber, int doctorAppointed, int roomNumber) {
         this.name = name;
-        sex = sexAvailable[sexIndex < 3 && sexIndex > 0 ? sexIndex : 2];
+        sex = sexAvailable[sexIndex];
         this.age = age;
         this.contactNumber = contactNumber;
         // generate a random number between 1 and 1,00,000.
@@ -37,12 +37,17 @@ public class Patient {
         this.roomNumber = roomNumber;
     }
 
-    public void displayInfo() {
+    public void displayMin()   {
+        System.out.println("Patient name: " + name + "\tRoom Number: "+roomNumber);
+    }
+
+    public void display() {
         System.out.println(this);
     }
 
     public String toString() {
-        return "Patient Name: " + name + "\nAge: " + age + "\nSex: " + sex + "\nPatient's Code: " + code + "\nRoom number assinged: " + roomNumber + "";
+        return "Patient Name: " + name + "\n\tAge: " + age + "\n\tSex: " + sex + "\n\tPatient's Code: " + code + "\n\tRoom number assinged: " + roomNumber +
+        "\nContact number: " + contactNumber + "\nAppointment Code:" + appointmentCode + "\nDoctor assinged:\n" + doctorAppointed;
     }
 
     public void updateName(String name) {

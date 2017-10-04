@@ -1,0 +1,247 @@
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 1
+Enter Patient Name: Pranav
+Enter Patient age: 19
+Enter Patient's sex (1 => Male  2 => Female  3 => Unkonwn): 1
+Enter Patient's room number(1 - 200): 32
+Doctor Avilable:
+1] Doctor Name: Dr. T. K. Banerjee (MBBS, FRCP (London & Edinburgh))
+        Age: 34
+        Sex: Female
+        Doctor's Code: 9960
+        Contact Number: 7428741713
+2] Doctor Name: Dr. Suniti Kumar Hazra (MBBS, DGO, MS)
+        Age: 38
+        Sex: Female
+        Doctor's Code: 7335
+        Contact Number: 9923433287
+3] Doctor Name: Dr. Anupam Biswas (MS)
+        Age: 45
+        Sex: Male
+        Doctor's Code: 5776
+        Contact Number: 7823924300
+4] Doctor Name: Mr. Rajanikant Pradhan (BSC (HLS) (Hearing, Language & Speech))
+        Age: 37
+        Sex: Male
+        Doctor's Code: 6297
+        Contact Number: 7246325688
+5] Doctor Name: Dr. Prakash Kr. Hazra (MBBS, MD, DM)
+        Age: 52
+        Sex: Male
+        Doctor's Code: 1826
+        Contact Number: 8195167017
+6] Doctor Name: Dr. Soumitra Roy (MD, FRCP (London))
+        Age: 31
+        Sex: Female
+        Doctor's Code: 3459
+        Contact Number: 8332607533
+7] Doctor Name: Dr. Sandip Mandal (MBBS, MD)
+        Age: 28
+        Sex: Male
+        Doctor's Code: 3291
+        Contact Number: 8426952555
+8] Doctor Name: Dr. Subrata Kumar Mitra (MBBS, MS (Sur.), M.Ch. (Uro))
+        Age: 36
+        Sex: Male
+        Doctor's Code: 5411
+        Contact Number: 7496205888
+9] Doctor Name: Dr. S. R. Kamath (MS, FRCS, MCH (Orth.))
+        Age: 26
+        Sex: Female
+        Doctor's Code: 3605
+        Contact Number: 9788034336
+Select Doctor which is to be appointed: 2
+Enter Patient's contact number: 3313142422
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 1
+Enter Patient Name: Ram
+Enter Patient age: 32
+Enter Patient's sex (1 => Male  2 => Female  3 => Unkonwn): 1
+Enter Patient's room number(1 - 200): 42
+Doctor Avilable:
+1] Doctor Name: Dr. T. K. Banerjee (MBBS, FRCP (London & Edinburgh))
+        Age: 34
+        Sex: Female
+        Doctor's Code: 9960
+        Contact Number: 7428741713
+2] Doctor Name: Dr. Suniti Kumar Hazra (MBBS, DGO, MS)
+        Age: 38
+        Sex: Female
+        Doctor's Code: 7335
+        Contact Number: 9923433287
+3] Doctor Name: Dr. Anupam Biswas (MS)
+        Age: 45
+        Sex: Male
+        Doctor's Code: 5776
+        Contact Number: 7823924300
+4] Doctor Name: Mr. Rajanikant Pradhan (BSC (HLS) (Hearing, Language & Speech))
+        Age: 37
+        Sex: Male
+        Doctor's Code: 6297
+        Contact Number: 7246325688
+5] Doctor Name: Dr. Prakash Kr. Hazra (MBBS, MD, DM)
+        Age: 52
+        Sex: Male
+        Doctor's Code: 1826
+        Contact Number: 8195167017
+6] Doctor Name: Dr. Soumitra Roy (MD, FRCP (London))
+        Age: 31
+        Sex: Female
+        Doctor's Code: 3459
+        Contact Number: 8332607533
+7] Doctor Name: Dr. Sandip Mandal (MBBS, MD)
+        Age: 28
+        Sex: Male
+        Doctor's Code: 3291
+        Contact Number: 8426952555
+8] Doctor Name: Dr. Subrata Kumar Mitra (MBBS, MS (Sur.), M.Ch. (Uro))
+        Age: 36
+        Sex: Male
+        Doctor's Code: 5411
+        Contact Number: 7496205888
+9] Doctor Name: Dr. S. R. Kamath (MS, FRCS, MCH (Orth.))
+        Age: 26
+        Sex: Female
+        Doctor's Code: 3605
+        Contact Number: 9788034336
+Select Doctor which is to be appointed: 3
+Enter Patient's contact number: 131312412412
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 3
+Enter Patient room number of patient to view (0 for all patient): 0
+Patient name: Pranav    Room Number: 32
+Patient name: Ram       Room Number: 42
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 3
+Enter Patient room number of patient to view (0 for all patient): 32
+Patient Name: Pranav
+        Age: 19
+        Sex: Male
+        Patient's Code: 10234
+        Room number assinged: 32
+	Contact number: 3313142422
+Appointment Code:551
+Doctor assinged:
+Doctor Name: Dr. Anupam Biswas (MS)
+        Age: 45
+        Sex: Male
+        Doctor's Code: 4996
+        Contact Number: 8503252050
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 2
+Enter Patient room number of patient to remove (0 to remove all patient i.e reset Hospital): 42
+Room is Emptied
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 5
+Enter Patient room number of patient to Edit: 32
+Edits Avilable:
+1 ==> Update Name               2 => Update Room number
+3 => Update appointed doctor
+Select choice:1
+Enter new Name: PRANAV
+"PRANAV" will replpace "Pranav"
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 3
+Enter Patient room number of patient to view (0 for all patient): 0
+Patient name: PRANAV    Room Number: 32
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 2
+Enter Patient room number of patient to remove (0 to remove all patient i.e reset Hospital): 0
+Write "CONFIRM" to reset:CONFIRM
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 3
+NO Patient Avilable!
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 4
+Doctor Avilable:
+1] Doctor Name: Dr. T. K. Banerjee (MBBS, FRCP (London & Edinburgh))
+        Age: 34
+        Sex: Female
+        Doctor's Code: 8639
+        Contact Number: 7902610110
+2] Doctor Name: Dr. Suniti Kumar Hazra (MBBS, DGO, MS)
+        Age: 38
+        Sex: Female
+        Doctor's Code: 1190
+        Contact Number: 8368809082
+3] Doctor Name: Dr. Anupam Biswas (MS)
+        Age: 45
+        Sex: Male
+        Doctor's Code: 4465
+        Contact Number: 7280349278
+4] Doctor Name: Mr. Rajanikant Pradhan (BSC (HLS) (Hearing, Language & Speech))
+        Age: 37
+        Sex: Male
+        Doctor's Code: 1800
+        Contact Number: 8787296045
+5] Doctor Name: Dr. Prakash Kr. Hazra (MBBS, MD, DM)
+        Age: 52
+        Sex: Male
+        Doctor's Code: 5915
+        Contact Number: 8998377061
+6] Doctor Name: Dr. Soumitra Roy (MD, FRCP (London))
+        Age: 31
+        Sex: Female
+        Doctor's Code: 9894
+        Contact Number: 9811497083
+7] Doctor Name: Dr. Sandip Mandal (MBBS, MD)
+        Age: 28
+        Sex: Male
+        Doctor's Code: 1403
+        Contact Number: 9417208603
+8] Doctor Name: Dr. Subrata Kumar Mitra (MBBS, MS (Sur.), M.Ch. (Uro))
+        Age: 36
+        Sex: Male
+        Doctor's Code: 5555
+        Contact Number: 9206260267
+9] Doctor Name: Dr. S. R. Kamath (MS, FRCS, MCH (Orth.))
+        Age: 26
+        Sex: Female
+        Doctor's Code: 7645
+        Contact Number: 9144467167
+
+Tasks Avilable:
+        1 => Add Patient        2 => Remove Patient
+        3 => View Patient       4 => View Doctors
+        5 => Update Patent      6 => Exit
+Enter Choice: 6
+Exiting...
