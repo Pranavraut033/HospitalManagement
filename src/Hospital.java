@@ -11,11 +11,11 @@ public class Hospital {
     DoctorList dl = new DoctorList();
     Patient patients[] = new Patient[maxRoom]; //Array of patients
     Scanner scn = new Scanner(System.in); //to get object from user
-    int roomAssigned = 0; //holds the number of room assinged
+    int roomAssigned = 0; //holds the number of room assigned
 
     public void  addPatient() {
         if (roomAssigned == maxRoom) {
-            System.out.println("No Room Avilable!"); //print error message
+            System.out.println("No Room Available!"); //print error message
             return;
         }
         int sex = -1, age, room  = -1, doc = -1;
@@ -29,13 +29,13 @@ public class Hospital {
         //get valid sex
         do {
             if(sex != -1) System.out.println("Select a Sex!");
-            System.out.print("Enter Patient's sex (1 => Male  2 => Female  3 => Unkonwn): ");
+            System.out.print("Enter Patient's sex (1 => Male  2 => Female  3 => Unknown): ");
             sex = scn.nextInt() - 1;
         } while (sex > 2 || sex < 0);
 
         //get valid room number
         do {
-            if(room != -1) System.out.println("Room Not Avilable!");
+            if(room != -1) System.out.println("Room Not Available!");
             System.out.print("Enter Patient's room number(1 - " + maxRoom + "): ");
             room = scn.nextInt() - 1;
         } while (room > maxRoom || room < 0);
@@ -59,13 +59,13 @@ public class Hospital {
 
     public void viewPatient() {
         if(roomAssigned == 0){
-            System.out.println("NO Patient Avilable!");
+            System.out.println("NO Patient Available!");
             return;
         }
         int room = -1;
         do {
             if(room != -1)
-                System.out.println("Room Not Avilable!");
+                System.out.println("Room Not Available!");
             System.out.print("Enter Patient room number of patient to view (0 for all patient): ");
             room = scn.nextInt();
         } while (room > maxRoom || room < 0);
@@ -87,18 +87,18 @@ public class Hospital {
 
     public void removePatient() {
         if(roomAssigned == 0){
-            System.out.println("NO Patient Avilable!");
+            System.out.println("NO Patient Available!");
             return;
         }
         int room = -1;
         do {
             if(room != -1)
-                System.out.println("Room Not Avilable!");
-            System.out.print("Enter Patient room number of patient to remove (0 to remove all patient i.e reset Hospital): ");
+                System.out.println("Room Not Available!");
+            System.out.print("Enter Patient room number of patient to remove (0 to remove all patient i.e. reset Hospital): ");
             room = scn.nextInt();
         } while (room > maxRoom || room < 0);
         if (room == 0) {
-            System.out.print("Write \"CONFIRM\" to reset:");
+            System.out.print("Write \"CONFIRM\" to reset: ");
             String s = scn.next();
             if(s.equals("CONFIRM"))
                 patients = new Patient[maxRoom];
@@ -111,19 +111,19 @@ public class Hospital {
 
     public void updatePatient() {
         if(roomAssigned == 0){
-            System.out.println("NO Patient Avilable!");
+            System.out.println("NO Patient Available!");
             return;
         }
         int room = -1 , c, nRoom = -1;
         //repeat unti user enters valid room
         do {
             if(room != -1)
-                System.out.println("Room Not Avilable!");
+                System.out.println("Room Not Available!");
             System.out.print("Enter Patient room number of patient to Edit: ");
             room = scn.nextInt() - 1;
         } while (room > maxRoom || room < 0);
         //Show choices
-        System.out.println("Edits Avilable:");
+        System.out.println("Edits Available:");
         System.out.println("1 ==> Update Name\t\t2 => Update Room number\n3 => Update appointed doctor");
         System.out.print("Select choice:");
         c = scn.nextInt();//get choice
@@ -131,13 +131,13 @@ public class Hospital {
             case 1:
                 System.out.print("Enter new Name: ");
                 String s = scn.next(); //get new name from the user
-                System.out.println("\"" + s + "\" will replpace \"" + patients[room].getName() + "\"");
+                System.out.println("\"" + s + "\" will replace \"" + patients[room].getName() + "\"");
                 patients[room].updateName(s); //update instance variable
                 break;
             case 2:
                 do {
                     if(nRoom != -1)
-                        System.out.println("Room not avilable!");
+                        System.out.println("Room not Available!");
                     System.out.print("Enter new room number: ");
                     nRoom = scn.nextInt() - 1;
                     if(patients[nRoom] != null) {
@@ -145,7 +145,7 @@ public class Hospital {
                         nRoom = 201;
                     }
                 } while (nRoom < 0 || nRoom > 200);
-                System.out.println("\"" + (nRoom + 1) + "\" will replpace \"" + (room + 1) + "\"");
+                System.out.println("\"" + (nRoom + 1) + "\" will replace \"" + (room + 1) + "\"");
                 patients[nRoom] = patients[room]; //Assign new room to patient
                 patients[room] = null; //Empty previous room
                 patients[nRoom].updateRoomNumber(nRoom); //update instance variable
@@ -170,7 +170,7 @@ public class Hospital {
         Hospital h = new Hospital();
         int c = 0;
         while(c != -1) {
-            System.out.println("Tasks Avilable: ");
+            System.out.println("Tasks Available: ");
             System.out.println("\t1 => Add Patient\t2 => Remove Patient\n\t3 => View Patient\t4 => View Doctors\n\t5 => Update Patent\t6 => Exit");
             System.out.print("Enter Choice: ");
             c = scn.nextInt();

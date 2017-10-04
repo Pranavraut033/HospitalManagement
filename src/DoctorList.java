@@ -33,7 +33,7 @@ public class DoctorList {
 
     public String toString() {
         String s = "";
-        s += "Doctor Avilable:\n";
+        s += "Doctor Available:\n";
         for(int i = 0; i < doctors.length; i++)
             s += (i + 1) + "] " + doctors[i];
         return s;

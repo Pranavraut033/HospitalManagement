@@ -5,7 +5,7 @@ import utilities.Utils;
 public class Doctor {
 
     public final String[] sexAvailable = new String[] {
-        "Male", "Female", "Unkonwn"
+        "Male", "Female", "Unknown"
     };
 
     Utils utils = new Utils();

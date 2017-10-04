@@ -1,16 +1,16 @@
-(cmd)/> javac -d . *.java 
+(cmd)/> javac -d . *.java
 (cmd)/> java hospital.Hospital
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
 Enter Choice: 1
 Enter Patient Name: Pranav
 Enter Patient age: 19
-Enter Patient's sex (1 => Male  2 => Female  3 => Unkonwn): 1
+Enter Patient's sex (1 => Male  2 => Female  3 => Unknown): 1
 Enter Patient's room number(1 - 200): 32
-Doctor Avilable:
+Doctor Available:
 1] Doctor Name: Dr. T. K. Banerjee (MBBS, FRCP (London & Edinburgh))
         Age: 34
         Sex: Female
@@ -59,16 +59,16 @@ Doctor Avilable:
 Select Doctor which is to be appointed: 2
 Enter Patient's contact number: 3313142422
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
 Enter Choice: 1
 Enter Patient Name: Ram
 Enter Patient age: 32
-Enter Patient's sex (1 => Male  2 => Female  3 => Unkonwn): 1
+Enter Patient's sex (1 => Male  2 => Female  3 => Unknown): 1
 Enter Patient's room number(1 - 200): 42
-Doctor Avilable:
+Doctor Available:
 1] Doctor Name: Dr. T. K. Banerjee (MBBS, FRCP (London & Edinburgh))
         Age: 34
         Sex: Female
@@ -117,7 +117,7 @@ Doctor Avilable:
 Select Doctor which is to be appointed: 3
 Enter Patient's contact number: 131312412412
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
@@ -126,7 +126,7 @@ Enter Patient room number of patient to view (0 for all patient): 0
 Patient name: Pranav    Room Number: 32
 Patient name: Ram       Room Number: 42
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
@@ -136,38 +136,38 @@ Patient Name: Pranav
         Age: 19
         Sex: Male
         Patient's Code: 10234
-        Room number assinged: 32
+        Room number assigned: 32
 	Contact number: 3313142422
 Appointment Code:551
-Doctor assinged:
+Doctor assigned:
 Doctor Name: Dr. Anupam Biswas (MS)
         Age: 45
         Sex: Male
         Doctor's Code: 4996
         Contact Number: 8503252050
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
 Enter Choice: 2
-Enter Patient room number of patient to remove (0 to remove all patient i.e reset Hospital): 42
+Enter Patient room number of patient to remove (0 to remove all patient i.e. reset Hospital): 42
 Room is Emptied
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
 Enter Choice: 5
 Enter Patient room number of patient to Edit: 32
-Edits Avilable:
+Edits Available:
 1 ==> Update Name               2 => Update Room number
 3 => Update appointed doctor
 Select choice:1
 Enter new Name: PRANAV
-"PRANAV" will replpace "Pranav"
+"PRANAV" will replace "Pranav"
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
@@ -175,27 +175,27 @@ Enter Choice: 3
 Enter Patient room number of patient to view (0 for all patient): 0
 Patient name: PRANAV    Room Number: 32
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
 Enter Choice: 2
-Enter Patient room number of patient to remove (0 to remove all patient i.e reset Hospital): 0
-Write "CONFIRM" to reset:CONFIRM
+Enter Patient room number of patient to remove (0 to remove all patient i.e. reset Hospital): 0
+Write "CONFIRM" to reset: CONFIRM
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
 Enter Choice: 3
-NO Patient Avilable!
+NO Patient Available!
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit
 Enter Choice: 4
-Doctor Avilable:
+Doctor Available:
 1] Doctor Name: Dr. T. K. Banerjee (MBBS, FRCP (London & Edinburgh))
         Age: 34
         Sex: Female
@@ -242,7 +242,7 @@ Doctor Avilable:
         Doctor's Code: 7645
         Contact Number: 9144467167
 
-Tasks Avilable:
+Tasks Available:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
         5 => Update Patent      6 => Exit

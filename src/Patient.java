@@ -6,7 +6,7 @@ import utilities.Utils;
 public class Patient {
 
     public final String[] sexAvailable = new String[] {
-        "Male", "Female", "Unkonwn"
+        "Male", "Female", "Unknown"
     };
 
     DoctorList d = new DoctorList();
@@ -46,8 +46,8 @@ public class Patient {
     }
 
     public String toString() {
-        return "Patient Name: " + name + "\n\tAge: " + age + "\n\tSex: " + sex + "\n\tPatient's Code: " + code + "\n\tRoom number assinged: " + roomNumber +
-        "\nContact number: " + contactNumber + "\nAppointment Code:" + appointmentCode + "\nDoctor assinged:\n" + doctorAppointed;
+        return "Patient Name: " + name + "\n\tAge: " + age + "\n\tSex: " + sex + "\n\tPatient's Code: " + code + "\n\tRoom number assigned: " + roomNumber +
+        "\nContact number: " + contactNumber + "\nAppointment Code:" + appointmentCode + "\nDoctor assigned:\n" + doctorAppointed;
     }
 
     public void updateName(String name) {
