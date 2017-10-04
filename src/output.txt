@@ -1,3 +1,6 @@
+(cmd)/> javac -d . *.java 
+(cmd)/> java hospital.Hospital
+
 Tasks Avilable:
         1 => Add Patient        2 => Remove Patient
         3 => View Patient       4 => View Doctors
