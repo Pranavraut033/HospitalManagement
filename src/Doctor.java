@@ -17,10 +17,10 @@ public class Doctor {
     private int doctorCode;
     private long contactNumber;
 
-    public Doctor(String name, int sexIndex, int age, String qualification) {
+    public Doctor(String name, int sexIndex, String qualification) {
         this.name = name;
         sex = sexAvailable[sexIndex];
-        this.age = age;
+        this.age = utils.randInt(25, 70);
         this.qualification = qualification;
         doctorCode = utils.randInt(1000, 9999);
         contactNumber = utils.randLong(7000000000L, 9999999999L);

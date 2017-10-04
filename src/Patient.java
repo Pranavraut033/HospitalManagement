@@ -1,6 +1,5 @@
 package hospital.people;
 
-import hospital.data.DoctorList;
 import utilities.Utils;
 
 public class Patient {
@@ -9,7 +8,6 @@ public class Patient {
         "Male", "Female", "Unknown"
     };
 
-    DoctorList d = new DoctorList();
     Utils utils = new Utils();
 
     //Patient Primary information
@@ -24,7 +22,7 @@ public class Patient {
     private int roomNumber;
     private Doctor doctorAppointed;
 
-    public Patient(String name, int sexIndex, int age, long contactNumber, int doctorAppointed, int roomNumber) {
+    public Patient(String name, int sexIndex, int age, long contactNumber, Doctor doctor, int roomNumber) {
         this.name = name;
         sex = sexAvailable[sexIndex];
         this.age = age;
@@ -33,7 +31,7 @@ public class Patient {
         this.code = utils.randInt(1, 100000);
         // generate a random number between 1 and 1,000.
         this.appointmentCode = utils.randInt(1, 1000);
-        this.doctorAppointed = d.getDoctor(doctorAppointed);
+        this.doctorAppointed = doctor;
         this.roomNumber = roomNumber;
     }
 
@@ -58,8 +56,8 @@ public class Patient {
         this.roomNumber = roomNumber;
     }
 
-    public void updateDoctorAppointed(int doctorIndex) {
-        this.doctorAppointed = d.getDoctor(doctorIndex);
+    public void updateDoctorAppointed(Doctor doctor) {
+        this.doctorAppointed = doctor;
     }
 
     public int getCode() {

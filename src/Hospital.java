@@ -52,7 +52,7 @@ public class Hospital {
         System.out.print("Enter Patient's contact number: ");
         long contactNumber = scn.nextLong();
 
-        patients[room] = new Patient(name, sex, age, contactNumber, doc, room + 1);
+        patients[room] = new Patient(name, sex, age, contactNumber, dl.getDoctor(doc), room + 1);
 
         roomAssigned++; //increse number of room by 1
     }
@@ -90,22 +90,29 @@ public class Hospital {
             System.out.println("NO Patient Available!");
             return;
         }
+
         int room = -1;
+
         do {
             if(room != -1)
                 System.out.println("Room Not Available!");
             System.out.print("Enter Patient room number of patient to remove (0 to remove all patient i.e. reset Hospital): ");
             room = scn.nextInt();
         } while (room > maxRoom || room < 0);
+
         if (room == 0) {
             System.out.print("Write \"CONFIRM\" to reset: ");
             String s = scn.next();
             if(s.equals("CONFIRM"))
                 patients = new Patient[maxRoom];
+        } else if(patients[room - 1] == null) {
+            System.out.println("Room is already Empty!");
+            return;
         } else {
             patients[room - 1] = null; //room emptied
             System.out.println("Room is Emptied");
         }
+
         roomAssigned--; //decrease number of patient
     }
 
@@ -122,9 +129,14 @@ public class Hospital {
             System.out.print("Enter Patient room number of patient to Edit: ");
             room = scn.nextInt() - 1;
         } while (room > maxRoom || room < 0);
+
+        if (patients[room] == null) {
+            System.out.println("Room is Empty!");
+            return;
+        }
         //Show choices
         System.out.println("Edits Available:");
-        System.out.println("1 ==> Update Name\t\t2 => Update Room number\n3 => Update appointed doctor");
+        System.out.println("1 => Update Name\t\t2 => Update Room number\n3 => Update appointed doctor");
         System.out.print("Select choice:");
         c = scn.nextInt();//get choice
         switch (c) {
@@ -148,7 +160,7 @@ public class Hospital {
                 System.out.println("\"" + (nRoom + 1) + "\" will replace \"" + (room + 1) + "\"");
                 patients[nRoom] = patients[room]; //Assign new room to patient
                 patients[room] = null; //Empty previous room
-                patients[nRoom].updateRoomNumber(nRoom); //update instance variable
+                patients[nRoom].updateRoomNumber(nRoom + 1); //update instance variable
                 break;
             case 3:
                 int doc = -1;
@@ -159,7 +171,7 @@ public class Hospital {
                     System.out.print("Select Doctor which is to be appointed: ");
                     doc = scn.nextInt();
                 } while (doc > dl.getNumDoctor() || doc < 0);
-                patients[room].updateDoctorAppointed(doc);
+                patients[room].updateDoctorAppointed(dl.getDoctor(doc));
                 break;
             default:
         }
